@@ -1,0 +1,29 @@
+<ion-view view-title="Amino Acid Sequencing">
+	<ion-content>
+	
+		<div class="card">
+			<div class="item item-text-wrap">
+				An entered DNA sequence will be flipped to RNA, then sequenced for amino acids. The sequence length must be a multiple of 3 and contain only A, T, G or C nucleotides. 
+			</div>
+		</div>
+
+
+		<label class="item item-input item-floating-label">
+			<p class="input-label">Enter DNA Sequence</p>
+			<input type="text" placeholder="Enter DNA sequence" ng-model="data.input">
+		</label>
+
+		<br>
+
+		<button class="button button-block button-balanced" ng-click="submit()">
+			Sequence Amino Acids
+		</button>
+
+		<div class="card">
+			<div class="item item-text-wrap">
+				{{data.output}}
+			</div>
+		</div>
+
+	</ion-content>
+</ion-view>

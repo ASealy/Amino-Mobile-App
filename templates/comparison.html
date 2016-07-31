@@ -1,0 +1,35 @@
+<ion-view view-title="DNA Comparison">
+  <ion-content>
+
+    <div class="card">
+      <div class="item item-text-wrap">
+        Enter two DNA sequences for comparison. 
+      </div>
+    </div>
+
+    <label class="item item-input item-floating-label">
+      <p class="input-label">First DNA Sequence</p>
+      <input type="text" placeholder="Enter DNA sequence" ng-model="data.first">
+    </label>
+
+    <label class="item item-input item-floating-label">
+      <p class="input-label">Second DNA Sequence</p>
+      <input type="text" placeholder="Enter DNA sequence" ng-model="data.second">
+    </label>
+
+    <button class="button button-block button-balanced" ng-click="submit()">
+      Compare DNA Sequences
+    </button>
+
+    <div class="card">
+      <div class="item item-text-wrap">
+        {{data.output1}}
+        <br><br>
+        {{data.output2}}
+        <br><br>
+        {{data.output3}}
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>
